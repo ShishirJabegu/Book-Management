@@ -71,7 +71,7 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
             {
                 _unitOfWork.Category.Update(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "Category updated successfully";
+                TempData["success"] = "Category update successfully";
                 return RedirectToAction("Index");
             }
             return View();
