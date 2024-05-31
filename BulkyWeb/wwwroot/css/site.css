@@ -1,5 +1,5 @@
 .divider-text:before,
-.divider-text : after{
+.divider-text:after{
     color : white;
     content : "";
     flex : 1;
