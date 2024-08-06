@@ -7,10 +7,9 @@ function loadDataTable() {
     dataTable = $('#tblData').DataTable({
         "ajax": { url: '/admin/product/getall' },
         "columns": [
-            {data : 'title', "width":"10%"},
-            {data: 'description', "width":"20%"},          
-            { data: 'author', "width": "10%" },
-            { data: 'isbn', "width": "5%" },
+            {data : 'title', "width":"20%"},                     
+            { data: 'author', "width": "20%" },
+            { data: 'isbn', "width": "10%" },
             {data: 'listPrice', "width":"5%"},
             {data : 'price', "width":"5%"},
             {data: 'price50', "width": "5%" },

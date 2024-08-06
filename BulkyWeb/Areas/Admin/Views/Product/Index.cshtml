@@ -22,28 +22,27 @@
             <thead>
                 <tr>
                     <th>Title</th>
-                    <th>Description</th>
                     <th>Author</th>
                     <th>ISBN</th>
-                    <th>ListPrice</th>
+                    @* <th>ListPrice</th> *@
                     <th>Price</th>
-                    <th>Price50</th>
-                    <th>Price100</th>
+                    @* <th>Price50</th>
+                    <th>Price100</th> *@
                     <th>Category</th>
                 </tr>
             </thead>
-           @*  <tbody>
+            <tbody>
                 @foreach (var obj in Model)
                 {
                     <tr>
                         <td>@obj.Title</td>
-                        <td>@obj.Description</td>
+                        @* <td>@obj.Description</td> *@
                         <td>@obj.Author</td>
                         <td>@obj.ISBN</td>
-                        <td>@obj.ListPrice</td>
+                        @* <td>@obj.ListPrice</td> *@
                         <td>@obj.Price</td>
-                        <td>@obj.Price50</td>
-                        <td>@obj.Price100</td>
+                        @* <td>@obj.Price50</td>
+                        <td>@obj.Price100</td> *@
                         <td>@obj.Category.Name</td>
                         <td>
                             <div class="w-75 btn-group" role="group">
@@ -58,11 +57,11 @@
                         </td>
                     </tr>
                 }
-            </tbody> *@
+            </tbody> 
         </table>
     </div>
 </div>
-@section Scripts{
+@* @section Scripts{
     <script src="~/js/product.js"></script>
-}
+} *@
 
